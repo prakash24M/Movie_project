@@ -151,4 +151,3 @@ function Home(){
     <h1>WELCOME TO THE DEVELOPERS</h1>
   )
 }
-
