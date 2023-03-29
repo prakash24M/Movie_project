@@ -148,6 +148,6 @@ export default function App(){
 }
 function Home(){
   return(
-    <h1>WELCOME TO THE DEVELOPERS</h1>
+    <h1>WELCOME TO MOVIE APP</h1>
   )
 }
