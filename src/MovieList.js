@@ -28,14 +28,14 @@ export function MovieList(){
   return (
     <div>
             <div className="movie-list">
-        {movieList.map((mv) => (<Movie key={mv._id} 
+        {movieList.map((mv) => (<Movie key={mv.id} 
         movie={mv} 
-        id={mv._id} 
-        deleteButton={ <IconButton style={{marginLeft:"auto"}} color="error" onClick={()=>deleteMovie(mv._id)} aria-label="delete">
+        id={mv.id} 
+        deleteButton={ <IconButton style={{marginLeft:"auto"}} color="error" onClick={()=>deleteMovie(mv.id)} aria-label="delete">
   <DeleteIcon />
 </IconButton>}
 
-        editButton={ <IconButton onClick={()=>navigate(`/movies/edit/${mv._id}`)} color="secondary"  aria-label="delete">
+        editButton={ <IconButton onClick={()=>navigate(`/movies/edit/${mv.id}`)} color="secondary"  aria-label="delete">
   <EditIcon />
 </IconButton>} />))}
       </div>
